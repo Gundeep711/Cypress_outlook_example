@@ -1,0 +1,36 @@
+<html><head><title>Personalized Video</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+
+
+
+    </head><body><div>
+        Hi <span class="client_name">Ibad-usmani t'est</span>,
+        <br><br>
+        Hope all is well!
+        <br><br>
+        I wanted to reach out to you to see whether you would be available for a call next week. 
+        I'd love to show you all the awesome digital work Rich Media does, and chat about ideas for  <span class="company_name">TD Bank</span>.
+        <br><br>
+        We have a large range of digital services, including tools, apps, kiosks, web sites, games, video and animation. 
+        Do you have some availability next week for a call?
+        <br><br>
+        In the meantime, here's a fun personalized <a href="https://www.richmedia.com/comic/IbadusmanitestUsmani" target="_blank" data-sitelink="">comic book video</a> featuring – You!
+        <br><br>
+        <p>
+            Warm regards,
+            <br><br>
+            <span class="am_name">Change</span>
+        </p>
+    </div>
+    <br><br>
+    <div>
+        <a href="https://www.richmedia.com/comic/IbadusmanitestUsmani" target="_blank" data-sitelink="">
+            <img src="https://richmediawireless.com/hbspt/email-banners/pharmavideo/index.php?name=Ibad-usmani%20t%27est">
+        </a>
+	</div>
+    <script type="text/javascript" src="js/sendEmail.js"></script>
+
+
+</body></html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout Form</title>
+    <style>
+        /* Style for the card layout */
+        .card {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .card2 {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style for form elements */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        select {
+            width: 90%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="save" method="post">
+        <div class="card">
+            <h2>Enter details:</h2>
+            <div class="form-group">
+                <label for="ownerName">Enter owner name:</label>
+                <select name="ownerName" id="ownerName" placeholder="Enter name" required>
+                    <option value="Francis Vanden Hoven">Francis Vanden Hoven</option>
+                    <option value="Ryleigh Carson">Ryleigh Carson</option>
+                    <option value="Gundeep Singh">Gundeep Singh</option>
+                  </select>
+                <!-- <input type="text" id="ownerName" name="ownerName" placeholder="Enter name" required> -->
+            </div>
+            <div class="form-group">
+                <label for="numberOfRecords">Enter number of emails you want to send:</label>
+                <input type="text" id="numberOfRecords" name="numberOfRecords" placeholder="Enter number" required>
+            </div>
+            <div class="form-group">
+                <label for="campaginName">Enter campagin name:</label>
+                <select name="campaginName" id="campaginName" placeholder="Enter campagin name" required>
+                    <option value="Products Video">Products Video</option>
+                    <option value="RM Article">RM Article</option>
+                    <option value="Comic Campaign">Comic Campaign</option>
+                    <option value="Tool Campaign">Tool Campaign</option>
+                    <option value="RM Survey">RM Survey</option>
+                    <option value="Halloween 2019">Halloween 2019</option>
+                  </select>
+                <!-- <input type="text" id="campaginName" name="campaginName" placeholder="Enter campagin name" required> -->
+            </div>
+
+            <div class="form-group">
+                <button type = "submit" id = "submitBtn">Submit</button>
+                <p id = 'messageArea'></p>
+            </div>
+        </div>
+    </form>
+    <div class="card2">
+        <form action='run-tests'>
+            <div class="form-group">
+                <h3>Click run test to initate campagin</h3>
+                <button id="runTests">Run Test</button>
+                <p id = 'message'></p>
+                <img id = "loadingImage" src = "./img.jpg" style = "display: none; height: 30px; width: 30px; margin-left: 45% ;">
+
+            </div>
+
+        </form>
+
+        <form action='run-again'>
+            <div class="form-group">
+                <h3>Click below button to initate campagin with updated data</h3>
+                <button id="runAgain">Run with New data</button>
+                <p id = 'message'></p>
+                <img id = "loadingImage" src = "./img.jpg" style = "display: none; height: 30px; width: 30px; margin-left: 45% ;">
+
+            </div>
+
+        </form>
+    </div>
+        <script>
+            const button = document.getElementById('submitBtn');
+            const message = document.getElementById('messageArea');
+            button.addEventListener('click', function(){
+                message.textContent = 'Data Submitted !!';
+            });
+        </script>
+
+<script>
+    const testBtn = document.getElementById('runTests');
+    const testMessage = document.getElementById('message');
+    testBtn.addEventListener('click', function(){
+        testMessage.textContent = 'Please wait while we process your request !!';
+        // loadingImage.style.display = 'block';
+    });
+</script>
+</body>
+
+</html>
