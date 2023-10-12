@@ -9,7 +9,7 @@ describe('Sending email to top 5 clients', () => {
         cy.viewport(1280, 850);
         cy.fixture('input.json').then((data) => {
 
-            cy.visit('https://richmediawireless.com/dev/hubspot-test/', {
+            cy.visit('/', {
             auth: {
                 username: '',
                 password: ''
