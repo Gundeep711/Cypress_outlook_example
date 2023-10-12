@@ -11,8 +11,8 @@ describe('Sending email to top 5 clients', () => {
 
             cy.visit('https://richmediawireless.com/dev/hubspot-test/', {
             auth: {
-                username: 'richmedia',
-                password: 'yellowrobot20'
+                username: '',
+                password: ''
             },
         });
 
