@@ -1,0 +1,5 @@
+{
+  "user": "",
+  "pass": "",
+  "scriptPath": "cypress/e2e/sendEmail.ps1"
+}
